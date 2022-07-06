@@ -1,0 +1,16 @@
+@import 'vars.scss';
+
+%body {
+    font-family: $font-family-Open-Sans;
+    font-weight: $font-weight;
+    font-size: $font-size-body;
+    line-height: $line-height;
+    overflow-x: $overflow-x;
+}
+
+%content__title {
+    font-size:$font-size-content-title;
+    font-weight: $fonst-weight-content-title;
+    line-height: $line-height-content-title;
+    color: $color-content-title;
+}
