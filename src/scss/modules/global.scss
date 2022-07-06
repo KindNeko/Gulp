@@ -1,0 +1,41 @@
+@import 'patterns.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    @extend %body
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+
+.main {
+    flex: 1 0 auto;
+    margin-top: 15px;
+}
+
+
+.footer {
+    flex: 0 0 auto;
+}
+
+.container {
+    max-width: 0px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+
+
+// SVG
