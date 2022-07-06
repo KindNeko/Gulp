@@ -43,7 +43,7 @@ const watcher = () => {
 }
 
 // Для отдельного запуска
-export { svgSprive }
+// export { svgSprive }
 export { dev }
 export { build }
 export { deployZIP }
@@ -53,7 +53,7 @@ export { deployFTP }
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontStyle)
 
 // Параллельное выполнение
-const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, images));
+const mainTasks = gulp.series(fonts, svgSprive, gulp.parallel(copy, html, scss, js, images));
 const browser = gulp.parallel(watcher, server);
 
 // Сборка 
