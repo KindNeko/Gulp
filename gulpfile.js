@@ -43,6 +43,7 @@ const watcher = () => {
 }
 
 // Для отдельного запуска
+// "svgSprive": "gulp svgSprive"
 // export { svgSprive }
 export { dev }
 export { build }
